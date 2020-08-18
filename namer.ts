@@ -1,5 +1,5 @@
 export class Namer {
   public getName(): string {
-    return "";
+    return "MyName";
   }
 }

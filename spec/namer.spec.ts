@@ -10,12 +10,12 @@ describe("Namer getName function return value", () => {
   it("Shouldn't return blank.", () => {
     const namer = new Namer();
 
-    expect(namer.getName()).not.toMatch("", "The function getName() should return the name.");
+    expect(namer.getName()).not.toBe("", "The function getName() should return the name.");
   });
 
   it("Should return 'MyName'", () => {
     const namer = new Namer();
 
-    expect(namer.getName()).toMatch("MyName");
+    expect(namer.getName()).toBe("MyName");
   });
 })
